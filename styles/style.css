@@ -6,15 +6,116 @@
 
 :root {
     --dark-cyan:hsl(158, 36%, 37%);
+    --dark-green:hsl(156, 31%, 21%);
     --cream:hsl(30, 38%, 92%);
     --very-dark-blue:hsl(212, 21%, 14%);
     --dark-grayish-blue:hsl(228, 12%, 48%);
-    --white:hsl(0, 0%, 100%)
-    ;
+    --white:hsl(0, 0%, 100%);
 }
 
 body {
-    font-size: 1rem;
-    /* font-family: 'Fraunces', serif; */
+    font-size: 0.875rem;
+    
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
 }
+
+h1,h2 {
+    font-family: 'Fraunces', serif;
+}
+
+.main-card {
+    width: 90%;
+    margin: 2em auto;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+/* Card Image */
+
+.card-img-mobile {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-img-desktop {
+    display: none;
+}
+
+/* Card Content */
+
+.card-content {
+    padding: 1.5em;
+}
+
+.product-type {
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--dark-grayish-blue);
+}
+
+.product-title {
+    font-size: 2rem;
+    margin: 0.5em 0;
+    line-height: 1;
+}
+
+.product-description {
+    font-weight: 600;
+    line-height: 1.6;
+    opacity: 0.7;
+    color: var(--dark-grayish-blue);
+}
+
+.product-amounts {
+    display: flex;
+    column-gap: 1em;
+    margin: 2em 0 1.5em;
+}
+
+.product-price {
+    font-size: 2rem;
+    color: var(--dark-cyan);
+}
+
+.product-past-price {
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+
+/* Add to Cart Button */
+
+.add-to-card-btn {
+    background-color: var(--dark-cyan);
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1.2em;
+
+    font-family: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white)
+}
+
+.add-to-card-btn:hover,
+.add-to-card-btn:focus {
+    background-color: var(--dark-green);
+}
+
+.cart-icon {
+    margin-right: 0.5em;
+}
+
+
+
+
+
